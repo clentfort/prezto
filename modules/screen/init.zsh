@@ -26,9 +26,9 @@ if [[ -z "$STY" && -z "$EMACS" && -z "$VIM" ]] && ( \
       | head -1)"
 
   if [[ -n "$session" ]]; then
-    exec screen -x "$session"
+    exec screen -x -U "$session"
   else
-    exec screen -a -A -U -D -R -m "$SHELL" -l
+    exec screen -a -A -U -D -R -m -T "xterm" "$SHELL" -l 
   fi
 fi
 
