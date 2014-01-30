@@ -64,6 +64,9 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 # History Substring Search
 #
 
+# Enable history substring search
+zstyle ':prezto:module:history-substring-search' color 'yes'
+
 # Set the query found color.
 # zstyle ':prezto:module:history-substring-search:color' found ''
 
