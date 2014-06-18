@@ -35,12 +35,17 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'tmux' \
   'pacman' \
+  'explainshell' \
   'syntax-highlighting' \
   'history-substring-search' \
   'prompt'
 #
 # Editor
 #
+
+
+# Set the key mapping style to 'emacs' or 'vi'.
+zstyle ':prezto:module:explainshell' key-binding '^K'
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'vi'
