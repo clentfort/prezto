@@ -70,3 +70,9 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+#
+# Go Path
+#
+export GOPATH=$HOME/go
+export PATH=$HOME/.local/bin:$PATH:$GOPATH
